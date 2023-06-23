@@ -1,0 +1,63 @@
+5)
+import java.util.Scanner;
+
+public class GradeCalculator {
+    public static void main(String[] args) {
+        Scanner sn = new Scanner(System.in);
+        int num;
+        System.out.println("enter the mark: ");
+        num = sn.nextInt();
+        if(num>=50) {
+            if (num >90 || num==90) {
+                System.out.println("Grade A");
+            } else if (num >80|| num==80 ) {
+                System.out.println("Grade B");
+            } else if (num >70 || num==70) {
+                System.out.println("Grade C");
+            } else if (num > 60|| num==60) {
+                System.out.println("Grade D");
+            } else if (num >50 || num==50) {
+                System.out.println("Grade E");
+            }
+        }
+        else {
+            System.out.println("Grade F");
+        }
+
+    }
+}
+6)
+import java.util.Scanner;
+
+public class GradeCalculator1 {
+    public static void main(String[] args) {
+        Scanner sn = new Scanner(System.in);
+        int num;
+        System.out.println("enter the test score: ");
+        num = sn.nextInt();
+        switch(num/10){
+            case 10: case 9:
+                System.out.println("Grade: A");
+                break;
+            case 8:
+                System.out.println("Grade: B");
+                break;
+            case 7:
+                System.out.println("Grade: C");
+                break;
+            case 6:
+                System.out.println("Grade: D");
+                break;
+            case 5:
+                System.out.println("Grade E");
+                break;
+            case 4:
+                System.out.println("Grade F");
+                break;
+            default :
+                System.out.println("your failed");
+
+
+        }
+  }
+}
