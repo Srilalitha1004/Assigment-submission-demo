@@ -1,0 +1,14 @@
+public class MaxinArray {
+    public static void main(String[] args) {
+                int [] a ={2,7,8,9,10,46,6,14,18};
+                int max;
+                max=a[0];
+        for (int i=0;i < a.length;i++){
+            if(a[i] > getMax(max)){
+                 a[i]= max;
+            }
+        }
+
+        System.out.println("max in a array " +max);
+        System.out.println("first occurance "+a[0]);
+    }
